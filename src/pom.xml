@@ -15,8 +15,5 @@
 		<module>geral</module>
 		<module>jmh</module>
 		<module>demoweb</module>			
-		<module>aop</module>			
-		<module>leakmemory</module>
-		<module>AcmeWorld-master</module>				
 	</modules>
 </project>
