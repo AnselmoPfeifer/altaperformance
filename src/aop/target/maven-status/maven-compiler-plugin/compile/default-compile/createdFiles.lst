@@ -1,8 +1,0 @@
-com\ddlab\rnd\aop\impl\AfterHandlerImpl.class
-com\ddlab\rnd\beans\Calculator.class
-com\ddlab\rnd\aop\AbstractHandler.class
-com\ddlab\rnd\aop\BeforeHandler.class
-com\ddlab\rnd\aop\impl\BeforeHandlerImpl.class
-com\ddlab\rnd\aop\AfterHandler.class
-com\ddlab\rnd\beans\CalculatorImpl.class
-com\ddlab\rnd\aop\ProxyFactory.class
