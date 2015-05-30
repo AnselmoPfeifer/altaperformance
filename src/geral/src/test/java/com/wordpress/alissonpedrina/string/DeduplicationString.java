@@ -25,7 +25,7 @@ import java.util.LinkedList;
  * @author alissonpedrina
  *
  */
-public class LotsOfStrings {
+public class DeduplicationString {
 
 	private static final LinkedList<String> LOTS_OF_STRINGS = new LinkedList<>();
 

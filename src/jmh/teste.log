@@ -1,0 +1,113 @@
+# JMH 1.9.1 (released 36 days ago)
+# VM invoker: C:\Program Files\Java\jdk1.8.0_45\jre\bin\java.exe
+# VM invoker: C:\Program Files\Java\jdk1.8.0_45\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8 -Xbootclasspath:C:\Program Files\Java\jre1.8.0_45\lib\resources.jar;C:\Program Files\Java\jre1.8.0_45\lib\rt.jar;C:\Program Files\Java\jre1.8.0_45\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_45\lib\jce.jar;C:\Program Files\Java\jre1.8.0_45\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_45\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\cldrdata.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\dnsns.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\jaccess.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\jfxrt.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\localedata.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\nashorn.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\sunec.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\sunmscapi.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\zipfs.jar *** WARNING: some JVM options are ignored in non-forked runs ***
+# Warmup: 1 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.wordpress.alissonpedrina.JavaStringSplits.guavaSplit
+
+# Run progress: 0,00% complete, ETA 00:00:24
+# Fork: N/A, test runs in the existing VM
+# Warmup Iteration   1: 219,537 ops/ms
+Iteration   1: 297,043 ops/ms
+Iteration   2: 304,846 ops/ms
+Iteration   3: 306,901 ops/ms
+Iteration   4: 311,423 ops/ms
+Iteration   5: 310,266 ops/ms
+
+Result "guavaSplit":
+  306,096 ±(99.9%) 21,947 ops/ms [Average]
+  (min, avg, max) = (297,043, 306,096, 311,423), stdev = 5,700
+  CI (99.9%): [284,149, 328,043] (assumes normal distribution)
+
+
+# JMH 1.9.1 (released 36 days ago)
+# VM invoker: C:\Program Files\Java\jdk1.8.0_45\jre\bin\java.exe
+# VM invoker: C:\Program Files\Java\jdk1.8.0_45\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8 -Xbootclasspath:C:\Program Files\Java\jre1.8.0_45\lib\resources.jar;C:\Program Files\Java\jre1.8.0_45\lib\rt.jar;C:\Program Files\Java\jre1.8.0_45\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_45\lib\jce.jar;C:\Program Files\Java\jre1.8.0_45\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_45\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\cldrdata.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\dnsns.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\jaccess.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\jfxrt.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\localedata.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\nashorn.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\sunec.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\sunmscapi.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\zipfs.jar *** WARNING: some JVM options are ignored in non-forked runs ***
+# Warmup: 1 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.wordpress.alissonpedrina.JavaStringSplits.indexOf
+
+# Run progress: 25,00% complete, ETA 00:00:18
+# Fork: N/A, test runs in the existing VM
+# Warmup Iteration   1: 624,955 ops/ms
+Iteration   1: 659,591 ops/ms
+Iteration   2: 639,779 ops/ms
+Iteration   3: 649,466 ops/ms
+Iteration   4: 652,752 ops/ms
+Iteration   5: 640,729 ops/ms
+
+Result "indexOf":
+  648,463 ±(99.9%) 32,127 ops/ms [Average]
+  (min, avg, max) = (639,779, 648,463, 659,591), stdev = 8,343
+  CI (99.9%): [616,336, 680,591] (assumes normal distribution)
+
+
+# JMH 1.9.1 (released 36 days ago)
+# VM invoker: C:\Program Files\Java\jdk1.8.0_45\jre\bin\java.exe
+# VM invoker: C:\Program Files\Java\jdk1.8.0_45\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8 -Xbootclasspath:C:\Program Files\Java\jre1.8.0_45\lib\resources.jar;C:\Program Files\Java\jre1.8.0_45\lib\rt.jar;C:\Program Files\Java\jre1.8.0_45\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_45\lib\jce.jar;C:\Program Files\Java\jre1.8.0_45\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_45\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\cldrdata.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\dnsns.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\jaccess.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\jfxrt.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\localedata.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\nashorn.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\sunec.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\sunmscapi.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\zipfs.jar *** WARNING: some JVM options are ignored in non-forked runs ***
+# Warmup: 1 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.wordpress.alissonpedrina.JavaStringSplits.javaSplit
+
+# Run progress: 50,00% complete, ETA 00:00:12
+# Fork: N/A, test runs in the existing VM
+# Warmup Iteration   1: 500,556 ops/ms
+Iteration   1: 560,210 ops/ms
+Iteration   2: 541,589 ops/ms
+Iteration   3: 544,206 ops/ms
+Iteration   4: 540,756 ops/ms
+Iteration   5: 543,870 ops/ms
+
+Result "javaSplit":
+  546,126 ±(99.9%) 30,839 ops/ms [Average]
+  (min, avg, max) = (540,756, 546,126, 560,210), stdev = 8,009
+  CI (99.9%): [515,287, 576,965] (assumes normal distribution)
+
+
+# JMH 1.9.1 (released 36 days ago)
+# VM invoker: C:\Program Files\Java\jdk1.8.0_45\jre\bin\java.exe
+# VM invoker: C:\Program Files\Java\jdk1.8.0_45\jre\bin\java.exe
+# VM options: -Dfile.encoding=UTF-8 -Xbootclasspath:C:\Program Files\Java\jre1.8.0_45\lib\resources.jar;C:\Program Files\Java\jre1.8.0_45\lib\rt.jar;C:\Program Files\Java\jre1.8.0_45\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_45\lib\jce.jar;C:\Program Files\Java\jre1.8.0_45\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_45\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\cldrdata.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\dnsns.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\jaccess.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\jfxrt.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\localedata.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\nashorn.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\sunec.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\sunmscapi.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jre1.8.0_45\lib\ext\zipfs.jar *** WARNING: some JVM options are ignored in non-forked runs ***
+# Warmup: 1 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.wordpress.alissonpedrina.JavaStringSplits.stringTokenizer
+
+# Run progress: 75,00% complete, ETA 00:00:06
+# Fork: N/A, test runs in the existing VM
+# Warmup Iteration   1: 445,963 ops/ms
+Iteration   1: 498,282 ops/ms
+Iteration   2: 491,976 ops/ms
+Iteration   3: 470,634 ops/ms
+Iteration   4: 422,543 ops/ms
+Iteration   5: 391,966 ops/ms
+
+Result "stringTokenizer":
+  455,080 ±(99.9%) 177,628 ops/ms [Average]
+  (min, avg, max) = (391,966, 455,080, 498,282), stdev = 46,129
+  CI (99.9%): [277,452, 632,708] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:00:24
+
+Benchmark                          Mode  Cnt    Score     Error   Units
+JavaStringSplits.guavaSplit       thrpt    5  306,096 ±  21,947  ops/ms
+JavaStringSplits.indexOf          thrpt    5  648,463 ±  32,127  ops/ms
+JavaStringSplits.javaSplit        thrpt    5  546,126 ±  30,839  ops/ms
+JavaStringSplits.stringTokenizer  thrpt    5  455,080 ± 177,628  ops/ms
+
+Benchmark result is saved to jmh-result.csv

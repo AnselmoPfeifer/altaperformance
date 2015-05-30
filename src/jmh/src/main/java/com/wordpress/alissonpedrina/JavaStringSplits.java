@@ -1,8 +1,10 @@
 package com.wordpress.alissonpedrina;
+
 /**
  * http://hg.openjdk.java.net/code-tools/jmh/file/10560d7513f4/jmh-samples/src/main/java/org/openjdk/jmh/samples/JMHSample_12_Forking.java
  */
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.StringTokenizer;
@@ -16,12 +18,18 @@ import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.Warmup;
 import org.openjdk.jmh.infra.Blackhole;
+import org.openjdk.jmh.profile.ClassloaderProfiler;
+import org.openjdk.jmh.results.RunResult;
+import org.openjdk.jmh.runner.Runner;
+import org.openjdk.jmh.runner.RunnerException;
+import org.openjdk.jmh.runner.options.Options;
+import org.openjdk.jmh.runner.options.OptionsBuilder;
 
 import com.google.common.base.Splitter;
 
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
 @Warmup(iterations = 1, time = 1, timeUnit = TimeUnit.SECONDS)
-@Fork(value = 1)
+@Fork(value = 0)
 @Measurement(iterations = 1, time = 1, timeUnit = TimeUnit.SECONDS)
 public class JavaStringSplits {
 
@@ -83,5 +91,12 @@ public class JavaStringSplits {
 			}
 			bh.consume(ls);
 		}
+	}
+
+	public static void main(String[] args) throws RunnerException {
+		Options opts = new OptionsBuilder().include(JavaStringSplits.class.getSimpleName()).warmupIterations(5).addProfiler(ClassloaderProfiler.class)
+				.measurementIterations(5).forks(0).jvmArgs("-Xprof").build();
+
+		new Runner(opts).run();
 	}
 }

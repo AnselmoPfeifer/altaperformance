@@ -1,0 +1,5 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99,9%)","Unit"
+"com.wordpress.alissonpedrina.JavaStringSplits.guavaSplit","thrpt",1,"5,000000","306,095817","21,947091","ops/ms"
+"com.wordpress.alissonpedrina.JavaStringSplits.indexOf","thrpt",1,"5,000000","648,463325","32,127434","ops/ms"
+"com.wordpress.alissonpedrina.JavaStringSplits.javaSplit","thrpt",1,"5,000000","546,126237","30,838833","ops/ms"
+"com.wordpress.alissonpedrina.JavaStringSplits.stringTokenizer","thrpt",1,"5,000000","455,080045","177,628254","ops/ms"
