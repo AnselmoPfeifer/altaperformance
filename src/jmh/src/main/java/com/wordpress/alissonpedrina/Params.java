@@ -45,7 +45,6 @@ public class Params {
 				.include(JavaStringSplits.class.getSimpleName())
 				.warmupIterations(1)
 				.output("teste.log")
-				.param("-of", "cvs")
 				.resultFormat(ResultFormatType.CSV)
 				.measurementIterations(5).forks(0).jvmArgs("-Xprof").build();
 		new Runner(opts).run();
